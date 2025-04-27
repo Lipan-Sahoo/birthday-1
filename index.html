@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #ffe6f7;
+            background-color: #fa63ca;
             text-align: center;
             padding: 20px;
             overflow-x: hidden;
@@ -22,7 +22,7 @@
         .loading-screen {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background-color: #ff69b4;
+            background-color: #bf3077;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -47,7 +47,7 @@
         }
 
         h1 {
-            color: #ff69b4;
+            color: #ab1862;
             margin-bottom: 20px;
             animation: bounce 1.5s infinite;
         }
@@ -117,7 +117,7 @@
         }
 
         button {
-            background-color: #ffb6c1;
+            background-color: #d641cf;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -126,30 +126,30 @@
             transition: background-color 0.3s ease;
         }
 
-        button:hover { background-color: #ff8ab4; }
+        button:hover { background-color: #ce29c8; }
     </style>
 </head>
 <body>
     <div class="loading-screen" id="loading">Loading... 🎉✨🎂</div>
 
     <div class="question-container" id="birthday-question">
-        <p>Is it your birthday?</p>
+        <p> PRIYA's birthday?</p>
         <button onclick="startBirthday()">Yes</button>
         <button onclick="moveQuestion()">No</button>
     </div>
 
     <div class="birthday-container" id="birthday-content">
-        <h1>Happy Birthday!</h1>
+        <h1>Happy Birthday PRIYA!</h1>
         <p>May your special day be filled with all the joy your heart can hold!</p>
         <audio id="birthday-song" loop>
-            <source src="agar1.mp3" type="audio/mpeg">
+            <source src="hbd.mp3" type="audio/mpeg">
         </audio>
         <div id="birthday-photos"></div>
         <div class="birthday-message" id="message">Have a wonderful birthday!</div>
     </div>
 
     <script>
-        const loadingEmojis = ['🎉', '✨', '🎂', '🎈', '🎁', '🥳'];
+        const loadingEmojis = ['🎉','❤','❣', '✨', '🎂', '🎈', '🎁', '🥳'];
         let emojiIndex = 0;
         setInterval(() => {
             document.getElementById('loading').textContent = 'Loading... ' + loadingEmojis[emojiIndex];
@@ -173,7 +173,7 @@
         }
 
         function startPhotoRotation() {
-            const photos = ['animal1.jpg', 'animal2.jpg', 'animal3.png', 'animal4.jpg', 'animal5.jpg', 'animal6.jpg'];
+            const photos = ['w1.jpg', 'w2.jpg', 'w3.jpg','w4.jpg', 'w5.jpg','w1.jpg', 'w2.jpg', 'w3.jpg','w4.jpg', 'w5.jpg',   ];
             let index = 0;
             const imgElement = document.createElement('img');
             document.getElementById('birthday-photos').appendChild(imgElement);
@@ -184,7 +184,7 @@
         }
 
         function createFloatingObjects() {
-            const objects = ['🎈', '⭐', '🎂'];
+            const objects = ['🎈','❤','❣', '⭐', '🎂'];
             setInterval(() => {
                 const obj = document.createElement('div');
                 obj.className = 'floating-objects';
